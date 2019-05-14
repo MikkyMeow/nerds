@@ -22,8 +22,48 @@
       </header>
     <main class="main">
       <aside class="sidebar">
-        <form action="">
-
+        <form action="/echo" method="get">
+          <fieldset class="radio">
+            <legend class="form-header">
+              Сетка:
+            </legend>
+            <label>
+              <input type="radio">
+              Адаптивная
+            </label>
+            <label>
+              <input type="radio">
+              Фиксированная
+            </label>
+            <label>
+              <input type="radio">
+              Резиновая
+            </label>
+          </fieldset>
+          <fieldset class="checkbox">
+            <legend class="form-header">Особенности:</legend>
+            <label>
+            <input type="checkbox">
+            Сайдбар
+            </label>
+            <label>
+            <input type="checkbox">
+            Блок преимуществ
+            </label>
+            <label>
+            <input type="checkbox">
+            Новости
+            </label>
+            <label>
+            <input type="checkbox">
+            Галерея
+            </label>
+            <label>
+            <input type="checkbox">
+            Корзина
+            </label>
+          </fieldset>
+          <button class="submit">Показать</button>
         </form>
       </aside>
       <section class="goods">
@@ -50,11 +90,11 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__social">
-        <span class="social-vk"></span>
-        <span class="social-fb"></span>
-        <span class="social-insta"></span>
-      </div>
+      <ul class="footer__social">
+        <li class="social-vk"></li>
+        <li class="social-fb"></li>
+        <li class="social-insta"></li>
+      </ul>
       <div class="footer__info">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
