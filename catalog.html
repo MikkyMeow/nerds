@@ -24,15 +24,15 @@
           <fieldset class="form-block">
             <legend class="form-header">Сетка:</legend>
             <label>
-              <input type="radio">
+              <input type="radio" name="layout" value="adaptive">
               Адаптивная
             </label>
             <label>
-              <input type="radio">
+              <input type="radio" name="layout" value="fixed">
               Фиксированная
             </label>
             <label>
-              <input type="radio">
+              <input type="radio" name="layout" value="flexible">
               Резиновая
             </label>
           </fieldset>
@@ -102,5 +102,21 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <div class="popup">
+      <h2 class="heading">Напишите нам</h2>
+      <label>
+        Ваше имя:
+        <input type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label>
+        Ваш e-mail:
+        <input type="email" name="email" placeholder="email.@example.com">
+      </label>
+      <label>
+        Текст письма:
+        <textarea placeholder="В свободной форме"></textarea>
+      </label>
+      <button>Отправить</button>
+    </div>
   </body>
 </html>
