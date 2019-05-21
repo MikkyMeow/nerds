@@ -7,7 +7,7 @@
   <body>
     <header class="header">
       <h1 class="visually-hidden">nerds</h1>
-      <div class="logo"></div>
+      <a class="logo" href="#"></a>
       <nav class="nav">
         <ul class="nav__items">
           <li class="nav__item"><a href="#">Студия</a></li>
@@ -54,20 +54,24 @@
       </div>
     </footer>
     <div class="popup">
-      <h2 class="heading">Напишите нам</h2>
-      <label>
-        Ваше имя:
-        <input type="text" name="name" placeholder="Имя Фамилия">
-      </label>
-      <label>
-        Ваш e-mail:
-        <input type="email" name="email" placeholder="email.@example.com">
-      </label>
-      <label>
-        Текст письма:
-        <textarea placeholder="В свободной форме"></textarea>
-      </label>
-      <button>Отправить</button>
+      <form action="/echo" method="get">
+        <h2 class="heading">Напишите нам</h2>
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Ваш e-mail:
+          <input type="email" name="email" placeholder="email.@example.com">
+        </label>
+        <label>
+          Текст письма:
+          <textarea placeholder="В свободной форме"></textarea>
+        </label>
+        <label>
+          <input type="submit" name="submit">
+        </label>
+      </form>
     </div>
   </body>
 </html>
