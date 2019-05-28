@@ -1,0 +1,103 @@
+body {
+  font-family: "Roboto", Arial sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.h2 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header {
+  background-color: #eee;
+}
+
+.nav__item, .cart {
+  font-weight: 500;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.nav__item a[href]:hover, .cart:hover {
+  color: #fb565a;
+}
+
+.nav__item a[href]:active, .cart:hover {
+  color: #000;
+  opacity: .2;
+}
+
+.active {
+  border-bottom: 2px solid #fb565a;
+}
+
+.form-header {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container-button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #fb565a;
+}
+
+.col:nth-child(2) .container-button {
+  background-color: #00ca74;
+}
+
+.col:last-child .container-button {
+  background-color: #efc84a;
+}
+
+.filter-button {
+  background-color: #eee;
+}
+
+.filter-button {
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
