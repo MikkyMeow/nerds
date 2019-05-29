@@ -101,6 +101,21 @@ a {
   background-color: #efc84a;
 }
 
+.main-catalog {
+  display: flex;
+  padding: 0 140px;
+}
+
+.form-block {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.goods .row {
+  flex-wrap: wrap;
+}
+
 .button-filter {
   background-color: #eee;
   color: #000;
