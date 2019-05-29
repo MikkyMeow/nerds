@@ -22,6 +22,21 @@ a {
 
 .header {
   background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+}
+
+.logo {
+  width: 160px;
+  height: 65px;
+  background-image: url('../img/icons/nerds-logo.svg');
+}
+
+.nav__items {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .nav__item,
@@ -44,6 +59,22 @@ a {
 
 .active {
   border-bottom: 2px solid #fb565a;
+}
+
+.container {
+  padding: 0 140px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  width: 300px;
 }
 
 .form-header {
@@ -73,6 +104,43 @@ a {
 .button-filter {
   background-color: #eee;
   color: #000;
+}
+
+.footer {
+  padding: 0 140px;
+  display: flex;
+}
+
+.footer__social {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  width: 80px;
+  height: 80px;
+  text-indent: -9999px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-vk {
+  background-image: url('../img/icons/vk-icon.svg');
+}
+
+.social-fb {
+  background-image: url('../img/icons/fb-icon.svg');
+}
+
+.social-insta {
+  background-image: url('../img/icons/insta-icon.svg');
+}
+
+.footer__info {
+  padding-left: 140px;
 }
 
 .popup {
