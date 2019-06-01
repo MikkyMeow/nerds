@@ -80,10 +80,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.container {
-  padding: 0 140px;
-}
-
 .row {
   display: flex;
   justify-content: space-between;
@@ -92,8 +88,28 @@ a {
   padding: 0;
 }
 
-.col {
+.row-container {
+  padding: 0 138px 80px;
+  border-bottom: 2px solid #eee;
+}
+
+.col-container {
   width: 300px;
+  padding-top: 80px;
+  margin-right: 100px;
+}
+
+.container-header {
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 19px;
+}
+
+.container-description {
+  width: 93%;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 2px;
 }
 
 .form-header {
@@ -104,7 +120,13 @@ a {
 }
 
 .button {
+  width: 163px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+  margin-top: 32px;
   color: #fff;
 }
 
