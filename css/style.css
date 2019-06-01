@@ -163,12 +163,13 @@ a {
 }
 
 .footer {
-  padding: 0 140px;
+  padding-left: 100px;
   display: flex;
 }
 
 .footer__social {
   width: 260px;
+  padding-top: 8px;
   display: flex;
   justify-content: space-between;
 }
@@ -197,6 +198,14 @@ a {
 
 .footer__info {
   padding-left: 140px;
+}
+
+.h2-footer {
+  margin-bottom: 8px;
+}
+
+.footer-description {
+  margin: 0;
 }
 
 .popup {
