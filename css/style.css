@@ -40,7 +40,7 @@ a {
 }
 
 .nav__item {
-  padding-right: 46px;
+  margin-right: 46px;
 }
 
 .nav__item,
@@ -147,17 +147,43 @@ a {
   padding: 0 140px;
 }
 
-.form-block {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-}
-
 .goods .row {
   flex-wrap: wrap;
 }
 
+.form-block {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+}
+
+.sidebar {
+  padding-top: 560px;
+}
+
+.form-header {
+  padding-bottom: 6px;
+}
+
+.form-radio {
+  margin-bottom: 35px;
+}
+
+.form-checkbox {
+  margin-bottom: 7px;
+}
+
+.form-label {
+  padding: 8px 0;
+  position: relative;
+}
+
 .button-filter {
+  border: none;
+  width: 260px;
+  border-radius: 3px;
   background-color: #eee;
   color: #000;
 }
