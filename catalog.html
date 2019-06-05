@@ -27,41 +27,25 @@
         <form action="/echo" method="get">
           <fieldset class="form-block form-radio">
             <legend class="form-header">Сетка:</legend>
-            <label class="form-label">
-              <input class="form-input" type="radio" name="layout" value="adaptive">
-              Адаптивная
-            </label>
-            <label class="form-label">
-              <input class="form-input" type="radio" name="layout" value="fixed">
-              Фиксированная
-            </label>
-            <label class="form-label">
-              <input class="form-input" type="radio" name="layout" value="flexible">
-              Резиновая
-            </label>
+            <input class="form-input visually-hidden" type="radio" name="layout" value="adaptive" id="adaptive">
+            <label class="form-label label-radio" for="adaptive">Адаптивная</label>
+            <input class="form-input visually-hidden" type="radio" name="layout" value="fixed" id="fixed">
+            <label class="form-label label-radio" for="fixed">Фиксированная</label>
+            <input class="form-input visually-hidden" type="radio" name="layout" value="flexible" id="flexible">
+            <label class="form-label label-radio" for="flexible">Резиновая</label>
           </fieldset>
           <fieldset class="form-block form-checkbox">
             <legend class="form-header">Особенности:</legend>
-            <label class="form-label">
-              <input class="form-input" type="checkbox">
-              Сайдбар
-            </label>
-            <label class="form-label">
-              <input class="form-input" type="checkbox">
-              Блок преимуществ
-            </label>
-            <label class="form-label">
-              <input class="form-input" type="checkbox">
-              Новости
-            </label>
-            <label class="form-label">
-              <input class="form-input" type="checkbox">
-              Галерея
-            </label>
-            <label class="form-label">
-              <input class="form-input" type="checkbox">
-              Корзина
-            </label>
+            <input class="form-input visually-hidden" type="checkbox" id="sidebar">
+            <label class="form-label label-checkbox" for="sidebar">Сайдбар</label>
+            <input class="form-input visually-hidden" type="checkbox" id="advantages">
+            <label class="form-label label-checkbox" for="advantages">Блок преимуществ</label>
+            <input class="form-input visually-hidden" type="checkbox" id="news">
+            <label class="form-label label-checkbox" for="news">Новости</label>
+            <input class="form-input visually-hidden" type="checkbox" id="galery">
+            <label class="form-label label-checkbox" for="galery">Галерея</label>
+            <input class="form-input visually-hidden" type="checkbox" id="cart">
+            <label class="form-label label-checkbox" for="cart">Корзина</label>
           </fieldset>
           <button class="button button-filter" type="submit">Показать</button>
         </form>
