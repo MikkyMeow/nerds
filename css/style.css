@@ -20,6 +20,8 @@ body {
   font-family: "Roboto", Arial sans-serif;
   font-size: 16px;
   line-height: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {
@@ -98,6 +100,7 @@ a {
 
 .active {
   border-bottom: 2px solid #fb565a;
+  padding-bottom: 6px;
 }
 
 .cart {
