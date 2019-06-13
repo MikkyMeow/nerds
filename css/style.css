@@ -79,6 +79,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
   padding: 49px 140px 0;
 }
 
@@ -143,8 +144,12 @@ a {
 }
 
 .slide {
-  display: flex;
   width: 1200px;
+  display: none;
+}
+
+.slide-current {
+  display: flex;
 }
 
 .left-block {
@@ -172,9 +177,9 @@ a {
 
 .right-block {
   width: 65%;
-  height: 424px;
+  height: 431px;
   background-size: 88%;
-  background-position: 24px 21px;
+  background-position: 24px 25px;
   background-repeat: no-repeat;
 }
 
@@ -186,6 +191,33 @@ a {
   .right-block__first {
     background-image: url("");
   }
+}
+
+.slider-btns {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 96px;
+}
+
+.slider-btn {
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.slider-btn-checked::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border: ;
 }
 
 .row {
@@ -207,7 +239,7 @@ a {
 
 .row-catalog {
   width: 760px;
-  padding-top: 133px;
+  padding-top: 19px;
 }
 
 .col-container {
@@ -310,12 +342,80 @@ a {
   background: url('../img/icons/radio-on.svg') no-repeat;
 }
 
+.form-input:focus + label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  left: -37px;
+  outline: none;
+  border: 2px solid #4d90fe;
+  box-shadow: 0px 0px 4px 0px #4d90fe;
+}
+
+.form-input:focus + .label-checkbox::before {
+  width: 23px;
+  height: 23px;
+}
+
 .button-filter {
   border: none;
   width: 260px;
   border-radius: 3px;
   background-color: #eee;
   color: #000;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-header__sorting {
+  font-family: "RobotoBold", Arial sans-serif;
+  font-weight: 900;
+  margin-top: 54px;
+}
+
+.options {
+  width: 544px;
+  margin-top: 59px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.options-item {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 26px;
+  color: #b2b2b2;
+}
+
+.option-select {
+  color: #000;
+}
+
+.triangle {
+  width: 39px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 63px;
+  margin-right: 1px;
+}
+
+.down {
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #000 transparent transparent transparent;
+}
+
+.up {
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #a6a6a6 transparent;
 }
 
 .browser {
